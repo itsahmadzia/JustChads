@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.focus.TreeController">
+   <children>
+      <Slider fx:id="slider" blockIncrement="1.0" layoutX="145.0" layoutY="11.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" onInputMethodTextChanged="#updateScene" onKeyPressed="#updateScene" onKeyReleased="#updateScene" onKeyTyped="#updateScene" onMouseClicked="#updateScene" onMouseEntered="#updateScene" onMouseExited="#updateScene" onMouseMoved="#updateScene" onMousePressed="#updateScene" onMouseReleased="#updateScene" prefHeight="58.0" prefWidth="1153.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <ImageView fx:id="image" fitHeight="631.0" fitWidth="848.0" layoutX="81.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/projectGUIscreens/Avatars/fighter.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" layoutX="978.0" layoutY="213.0" text="Label" textFill="#22b551">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="currRank" layoutX="978.0" layoutY="344.0" text="Label" textFill="#b23d22">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelstatus" layoutX="978.0" layoutY="459.0" text="Label">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="32.0" layoutY="28.0" mnemonicParsing="false" onAction="#goback" text="Back" />
+   </children>
+</AnchorPane>

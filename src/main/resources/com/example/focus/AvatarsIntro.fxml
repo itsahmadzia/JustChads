@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.focus.AvatarsIntroController">
+   <children>
+      <Slider fx:id="slider" blockIncrement="1.0" layoutX="145.0" layoutY="31.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" onMouseClicked="#updateScene" onMouseDragged="#updateScene" onMouseEntered="#updateScene" onMouseExited="#updateScene" onMouseMoved="#updateScene" onMousePressed="#updateScene" onMouseReleased="#updateScene" prefHeight="58.0" prefWidth="1153.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <ImageView fx:id="image" fitHeight="300.0" fitWidth="300.0" layoutX="60.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/projectGUIscreens/Avatars/fighter.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" layoutX="144.0" layoutY="557.0" text="Fighter">
+         <font>
+            <Font name="Rockwell Extra Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="story" layoutX="395.0" layoutY="210.0" prefHeight="384.0" prefWidth="478.0" style="-fx-text-fill: black;" wrapText="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="20.0" />
+         </font></TextArea>
+      <Label fx:id="score" layoutX="978.0" layoutY="213.0" text="Label" textFill="#22b551">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelstatus" layoutX="981.0" layoutY="302.0" text="Current Level" textFill="#838627">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="rankvalue" layoutX="981.0" layoutY="394.0" text="Label" textFill="#9a4a3e">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="24.0" layoutY="31.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="890.0" styleClass="g" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.focus.addictionListController">
+   <children>
+      <TableView fx:id="table" layoutY="69.0" prefHeight="640.0" prefWidth="674.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" text="Name" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="512.0" text="Description" />
+            <TableColumn fx:id="streakColumn" prefWidth="81.0" text="Streak" />
+         </columns>
+      </TableView>
+      <Button fx:id="b" layoutX="519.0" layoutY="23.0" mnemonicParsing="false" onAction="#initialize" text="Refresh" />
+      <Button fx:id="delete" layoutX="405.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteSelectedRowHabit" text="Delete" />
+      <Button fx:id="e" layoutX="259.0" layoutY="23.0" mnemonicParsing="false" onAction="#editSelectedRow" text="Edit" />
+      <Button fx:id="back" layoutX="124.0" layoutY="23.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</AnchorPane>

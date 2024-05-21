@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.focus.MenuController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="866.0" pickOnBounds="true">
+         <image>
+            <Image url="@WhatsApp%20Image%202023-05-04%20at%2008.10.23.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="65.0" layoutY="60.0" prefHeight="514.0" prefWidth="737.0" style="-fx-background-color: F5F3F5;">
+         <children>
+            <Pane prefHeight="514.0" prefWidth="379.0" style="-fx-background-color: #1B264F;">
+               <children>
+                  <ImageView fitHeight="307.0" fitWidth="313.0" layoutX="34.0" layoutY="97.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@Avatars/gigachad.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="105.0" layoutY="419.0" text="The CHAD" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="41.0" text="F.O.C.U.S on becoming..." textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="habit" layoutX="476.0" layoutY="126.0" mnemonicParsing="false" onAction="#habitPage" prefHeight="25.0" prefWidth="160.0" text="Habit" />
+            <Button fx:id="addiction" layoutX="477.0" layoutY="173.0" mnemonicParsing="false" onAction="#addictionPage" prefHeight="25.0" prefWidth="160.0" text="Addiction" />
+            <Button fx:id="stats" layoutX="476.0" layoutY="221.0" mnemonicParsing="false" onAction="#statsPage" prefHeight="25.0" prefWidth="160.0" text="Statistics" />
+            <Button fx:id="Tree" layoutX="477.0" layoutY="269.0" mnemonicParsing="false" onAction="#treePage" prefHeight="25.0" prefWidth="160.0" text="Tree" />
+            <Button fx:id="Rank" layoutX="477.0" layoutY="317.0" mnemonicParsing="false" onAction="#rankPage" prefHeight="25.0" prefWidth="160.0" text="Rank" />
+            <Button fx:id="GPN" layoutX="477.0" layoutY="362.0" mnemonicParsing="false" onAction="#generalPurposePage" prefHeight="25.0" prefWidth="160.0" text="General Purpose Note" />
+            <Button fx:id="homepage" layoutX="476.0" layoutY="80.0" mnemonicParsing="false" onAction="#homepagePage" prefHeight="25.0" prefWidth="160.0" text="Homepage" />
+            <Button fx:id="addHabit" layoutX="476.0" layoutY="402.0" mnemonicParsing="false" onAction="#addhabitpage" prefHeight="25.0" prefWidth="160.0" text="Add Habit" />
+            <Button fx:id="addAddiction" layoutX="476.0" layoutY="449.0" mnemonicParsing="false" onAction="#addAddictionpage" prefHeight="25.0" prefWidth="160.0" text="Add Addiction" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

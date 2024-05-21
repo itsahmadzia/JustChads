@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.focus.Homepagecontroller">
+   <children>
+      <Pane layoutX="43.0" layoutY="19.0" prefHeight="734.0" prefWidth="1278.0" style="-fx-background-color: #151E3F;">
+         <children>
+            <Button fx:id="Submit" layoutX="610.0" layoutY="31.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" style="-fx-background-color: #01A7C2;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="refresh" layoutX="607.0" layoutY="116.0" mnemonicParsing="false" onAction="#refreshhabotsandaddiction" style="-fx-background-color: #FFEC51;" text="Refresh" textFill="#050505">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffec51" height="40.0" layoutX="-25.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d33f49" height="40.0" layoutX="-36.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="-15.0" layoutY="251.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff674d" height="40.0" layoutX="-15.0" layoutY="327.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77ba99" height="40.0" layoutX="-15.0" layoutY="391.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96e072" height="40.0" layoutX="1196.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#62a8ac" height="40.0" layoutX="1213.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c179b9" height="40.0" layoutX="1164.0" layoutY="351.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff57bb" height="40.0" layoutX="1196.0" layoutY="281.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d81e5b" height="40.0" layoutX="1199.0" layoutY="634.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Label layoutX="625.0" layoutY="6.0" text="Label" />
+            <Button fx:id="back" layoutX="442.0" layoutY="19.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="57.0" text="Back" />
+         </children>
+      </Pane>
+      <TableView fx:id="HabitTable" layoutX="81.0" layoutY="80.0" prefHeight="651.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="179.1999969482422" text="habit" />
+          <TableColumn fx:id="Streak" prefWidth="193.5999755859375" text="Streak" />
+            <TableColumn fx:id="MarkasDone" prefWidth="157.0" text="Mark As Done" />
+        </columns>
+      </TableView>
+      <TableView fx:id="HabitTable1" layoutX="744.0" layoutY="78.0" prefHeight="651.0" prefWidth="535.0">
+         <columns>
+            <TableColumn fx:id="name1" prefWidth="191.0" text="Addiction" />
+            <TableColumn fx:id="Streak1" prefWidth="187.0" text="Streak" />
+            <TableColumn fx:id="MarkasDone1" prefWidth="174.0" text="Mark As Done" />
+         </columns>
+      </TableView>
+      <QuadCurve controlX="684.6000366210938" controlY="153.79998779296875" endX="747.0000610351562" endY="234.0" fill="#f2f2f200" layoutX="-7.0" layoutY="-101.0" startX="627.0" startY="234.0" stroke="#898989" strokeType="INSIDE" strokeWidth="4.0" />
+      <QuadCurve controlX="684.6000366210938" controlY="153.79998779296875" endX="747.0000610351562" endY="234.0" fill="#f2f2f200" layoutX="-7.0" layoutY="237.0" startX="627.0" startY="234.0" stroke="#898989" strokeType="INSIDE" strokeWidth="4.0" />
+      <QuadCurve controlX="684.6000366210938" controlY="153.79998779296875" endX="747.0000610351562" endY="234.0" fill="#f2f2f200" layoutX="-6.0" layoutY="358.0" startX="627.0" startY="234.0" stroke="#898989" strokeType="INSIDE" strokeWidth="4.0" />
+      <QuadCurve controlX="684.6000366210938" controlY="153.79998779296875" endX="747.0000610351562" endY="234.0" fill="#f2f2f200" layoutX="-7.0" layoutY="475.0" startX="627.0" startY="234.0" stroke="#898989" strokeType="INSIDE" strokeWidth="4.0" />
+      <QuadCurve controlX="684.6000366210938" controlY="153.79998779296875" endX="747.0000610351562" endY="234.0" fill="#89898900" layoutX="-7.0" layoutY="11.0" startX="627.0" startY="234.0" stroke="#898989" strokeType="INSIDE" strokeWidth="4.0" />
+      <QuadCurve controlX="684.6000366210938" controlY="153.79998779296875" endX="747.0000610351562" endY="234.0" fill="#f2f2f200" layoutX="-6.0" layoutY="124.0" startX="627.0" startY="234.0" stroke="#898989" strokeType="INSIDE" strokeWidth="4.0" />
+      <Ellipse fill="#010c15" layoutX="621.0" layoutY="135.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#031b30" layoutX="739.0" layoutY="136.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#020910" layoutX="739.0" layoutY="246.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#030e18" layoutX="621.0" layoutY="247.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#041c33" layoutX="621.0" layoutY="474.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#010910" layoutX="739.0" layoutY="473.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#010910" layoutX="622.0" layoutY="594.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#021323" layoutX="739.0" layoutY="594.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#01101e" layoutX="738.0" layoutY="712.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#00070d" layoutX="622.0" layoutY="712.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#020e18" layoutX="622.0" layoutY="361.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fill="#01101e" layoutX="739.0" layoutY="359.0" radiusX="10.0" radiusY="5.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
